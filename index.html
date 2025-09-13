@@ -5,25 +5,26 @@
     <title> Responsive Portfolio Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    
 </head>
 <body>
     
     <!-- nav menu -->
     <nav>
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-doration="1500">
                 <span>Adel</span>
             </div>
             <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -41,26 +42,19 @@
     </nav>
     <section>
         <div class="main-container">
-            <div class="image">
-                <img src="image/48.jpg" alt="my photo">
+            <div class="image" data-aos="zoom-out" data-aos-doration="3000">
+                <img src="image/Screenshot 2025-07-13 223018.png" alt="my photo">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left">
-                    Hey i'm
-                    <span>Adel</span>
-                </h1>
-                <div class="typewriter">
-                    i'm a
-                    <span class="typewriter-text"></span>
-                    <label for=""></label>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt culpa reiciendis dolorem harum vitae? Obcaecati labore harum consequatur soluta exercitationem. Voluptate rerum facilis sit omnis ab, voluptatibus nihil cupiditate.</p>
+                <h1 data-aos="fade-left" data-aos-doration="1500" data-aos-delay="700">Hey i'm <span>Adel Yousef</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-doration="1500">i'm a <span class="typewriter-text"></span><span class="cursor">|</span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-doration="1500" data-aos-delay="1100">i'm A Computer Science graduate specialized in Software Engineering. I build smart, scalable, and efficient software solutions. Passionate about Backend Development | Databases.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Adel-Yousef" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adel-yousef-b97366363/" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="btn">
-                    <button>Hire me</button>
+                <div class="btn" data-aos="zoom-in" data-aos-doration="1500" data-aos-delay="1800">
+                     <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Hire Me</button>
                 </div>
             </div>
         </div>
@@ -72,18 +66,18 @@
     <!-- About Section Start -->
     <section class="about" id="about">
         <div class="content">
-            <div class="title"><span>About Me</span></div>
+            <div class="title" data-aos="fade-up" data-aos-doration="1500"><span>About Me</span></div>
             <div class="about-details">
-                <div class="left">
-                    <img src="image/48.jpg" alt="">
+                <div class="left" data-aos="fade-right" data-aos-doration="1500" data-aos-delay="200">
+                    <img src="image/Screenshot 2025-07-13 223018.png" alt="">
                 </div>
                 <div class="right">
-                    <div class="topic">Designing is My Passion</div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem atque sequi iste optio minus commodi, et officia! Amet optio fugiat provident consequatur perferendis magni voluptates sequi earum quo dolores!
+                    <div class="topic" data-aos="fade-left" data-aos-doration="1500" data-aos-delay="200">Coding is My Passion</div>
+                    <p data-aos="flip-down" data-aos-doration="1500" data-aos-delay="300">
+                        I am a Computer Science graduate with a specialization in Software Engineering from King Abdulaziz University. My expertise is in Backend Development, and Database Management, using tools like Python, Flask, ReactJS, and Supabase. One of my key projects is MASARI, a smart academic management system that automated course registration, predicted class sections using machine learning, and optimized exam scheduling. I am passionate about continuous learning and excited to contribute to impactful projects in software development. Currently, I am seeking opportunities in Backend Development and Software Engineering roles.
                     </p>
-                    <div class="button">
-                        <button>Download CV</button>
+                    <div class="button" data-aos="zoom-in-right" data-aos-doration="1500" data-aos-delay="400">
+                        <a href="./resume/Adel-Sameer-Yousef-Resume.pdf" download="Adel-CV.pdf" class="btn">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -95,87 +89,109 @@
 
     <!-- My Skill Section Start -->
      <section class="skills" id="skills">
-        <div class="content"><span>My Skills</span></div>
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-doration="1200"><span>My Skills</span></div>
         <div class="skills-details">
             <div class="text">
-                <div class="topic">
-                    Skills Reflects Our Knowledge
+                <div class="topic" data-aos="fade-right" data-aos-doration="1200" data-aos-delay="200">
+                    From Concept to Code
                 </div>
-                <p data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quia ratione, ipsum sit ab veritatis? Facilis, iste molestiae, voluptate deleniti saepe aut, fugit tempora facere aliquid in quam rem unde?</p>
-                <div class="experience">
+                <p data-aos="fade-right" data-aos-doration="1200" data-aos-delay="400">I have experience in Backend Development, Database Management, and modern frameworks like Flask and ReactJs. My skills also include problem-solving, teamwork, and applying software engineering best practices to deliver efficient and scalable solutions.</p>
+                <!-- <div class="experience">
                     <div class="num">10</div>
                     <div class="exp">
-                        Years of <br/>
+                        Years of 
                         Experience
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="boxes">
                 <div class="box">
-                    <div class="topic">HTML</div>
-                    <div class="per">90%</div>
+                    <div class="topic" data-aos="fade-right" data-aos-doration="1200" data-aos-delay="150">HTML</div>
+                    
                 </div>
                 <div class="box">
-                    <div class="topic">CSS</div>
-                    <div class="per">70%</div>
+                    <div class="topic" data-aos="fade-left" data-aos-doration="1200" data-aos-delay="150">CSS</div>
+                    
                 </div>
                 <div class="box">
-                    <div class="topic">JavaScript</div>
-                    <div class="per">80%</div>
+                    <div class="topic" data-aos="fade-right" data-aos-doration="1200" data-aos-delay="450">JavaScript</div>
+                    
 
                 </div>
-            </div>
+                <div class="box">
+                    <div class="topic" data-aos="fade-right" data-aos-doration="1200" data-aos-delay="450">Supabase</div>
+                </div>
+        </div>
+          </div>
         </div>
      </section>
 
 
+     <!-- My portfolio -->
+
+     <section class="portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="title" data-aos="fade-up" data-aos-doration="1200"><span>My Last Projects :</span></div>
+            </div>
+            <div class="row">
+                <div class="portfolio-heading">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <!-- == portfolio item start == -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-inner">
+                        <div class="portfolio-img" data-aos="fade-right" data-aos-doration="1500" data-aos-delay="200">
+                            <img src="image/Screenshot 2025-05-23 163241.png" alt="Demo of my project">
+                            <div class="portfolio-details">
+                                <h3>MASARI</h3>
+                                <p>MASARI is an intelligent academic management platform designed to automate scheduling, predict class section demand, and streamline university operations for students, faculty, and administrators.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/Adel-Yousef/MASARI.git" target="_blank"><i class="fa-brands fa-github">Source Code</i></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                 <!-- == portfolio item end == -->
+            </div>
+        </div>
+     </section>
+
+      <!-- my portfolio ends -->
+
      <!-- My Services Section Start -->
       <section class="services" id="services">
         <div class="content">
-            <div class="title"><span>My Services</span></div>
+            <div class="title" data-aos="fade-up" data-aos-doration="1200"><span>My Services</span></div>
             <div class="boxes">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="200">
                     <div class="icon">
                         <i class="fas fa-desktop"></i>
                     </div>
                     <div class="topic">Web Development</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
+                    <p>I develop responsive and scalable Websites using modern technologies, turning existing designs into functional and efficient Web applications.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="400">
                     <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="topic">Digital Marketing</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fab fa-android"></i>
-                    </div>
-                    <div class="topic">Icon Design</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-camera-retro"></i>
-                    </div>
-                    <div class="topic">Photography</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-tablet-alt"></i>
+                        <i class="fa fa-mobile"></i>
                     </div>
                     <div class="topic">Apps Development</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero maxime? Cum suscipit temporibus, illum possimus ipsam molestiae explicabo placeat ut magni dolores itaque, optio error, recusandae tenetur. Aperiam, accusamus?</p>
+                    <p>I build functional and intuitive applications that meet user needs. From idea to implementation, I ensure apps are optimized, secure, and adaptable to different platforms with a focus on usability and performance.</p>
                 </div>
+                <div class="box" data-aos="fade-up" data-aos-doration="1500" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+                    <div class="topic">Databade Management</div>
+                    <p>I manage and optimize databases to ensure data consistency, security, and high performance. With experience in Subabase and MySQL, I focus on designing reliable structures, writing effient queries and more. </p>
+                </div>
+                
+                
+                
             </div>
         </div>
       </section>
@@ -184,13 +200,13 @@
       <!-- Contact Me Section Start -->
        <section class="contact" id="contact">
         <div class="content">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-doration="1500">
                 <span>Contact Me</span>
             </div>
             <div class="text">
-                <div class="topic">Have Any Project?</div>
+                <div class="topic" data-aos="fade-right" data-aos-doration="1500" data-aos-delay="200">Have Any Project?</div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, quisquam, reiciendis natus enim nostrum debitis impedit expedita vero alias inventore sint, illo voluptatibus porro modi dolore esse magni recusandae ipsum.</p>
-                <div class="button">
+                <div class="button" data-aos="zoom-in" data-aos-doration="1500" data-aos-delay="400">
                     <button>let's Chat</button>
                 </div>
             </div>
@@ -207,7 +223,11 @@
             </div>
         </footer>
 
-
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./scripts/app.js"></script>
 </body>
 </html>
