@@ -478,13 +478,38 @@ section .button button:hover{
     color: #b74b4b;
 }
 
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 100px;
+    height: 45px;
+    background-color: #b74b4b;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    scale: 1.1;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    background-color: transparent;
+    box-shadow: 0 0 40px #b74b4b;
+}
+
+
 .portfolio .container{
     padding-bottom: 40px;
 }
 
 
 .portfolio .portfolio-item{
-    flex: 0 0 33.33%;
+    flex: 0 0 40%;
     max-width: 40%;
     margin-bottom: 30px;
 }
@@ -498,6 +523,14 @@ section .button button:hover{
     
     display: block;
 }
+
+.portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 
 /* Portfolio Image Hover Effect */
 .portfolio-img {
